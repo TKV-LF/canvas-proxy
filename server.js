@@ -45,6 +45,7 @@ cors_proxy
     httpProxyOptions: {
       // Do not add X-Forwarded-For, etc. headers, because Heroku already adds it.
       xfwd: false,
+      secure: false,
     },
   })
   .listen(port, host, function () {
